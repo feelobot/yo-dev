@@ -1,5 +1,7 @@
 require 'sinatra'
 require 'yo-ruby'
+configure { set :server, :puma }
+configure { set :port, 8080 }
 
 Yo.api_key = "#{ENV['YO_API_KEY']}"
 
