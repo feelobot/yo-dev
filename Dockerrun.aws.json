@@ -7,7 +7,7 @@
   "Logging": "/var/log/nginx",
   "Ports": [
     {
-      "ContainerPort": "3000"
+      "ContainerPort": "4567"
     }
   ],
   "Authentication": {
