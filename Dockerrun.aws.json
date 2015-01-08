@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "feelobot/yo-dev",
+    "Update": true
+  },
+  "Logging": "/var/log/nginx",
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Authentication": {
+    "Bucket": "frodriguez-docker-cfgs",
+    "Key": "frodriguez.dockercfg"
+  }
+}

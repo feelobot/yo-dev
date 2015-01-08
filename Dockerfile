@@ -1,6 +1,3 @@
-FROM ruby:1.9.3
-ADD . /usr/src/app
-WORKDIR /usr/src/app
+FROM ruby:2.2.0-onbuild
 RUN chmod +x yo.rb
-RUN bundle install
 CMD ["./yo.rb"]
