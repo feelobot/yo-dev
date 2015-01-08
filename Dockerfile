@@ -1,4 +1,6 @@
-FROM ruby:2.2.0-onbuild
-RUN chmod +x yo.rb
+FROM ruby:2.2.0
+ADD . /usr/src/app
 EXPOSE 3000
-CMD ["./yo.rb"]
+WORKDIR /usr/src/app
+RUN bundle install
+CMD ["./run.sh"]

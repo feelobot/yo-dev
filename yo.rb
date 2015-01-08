@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'yo-ruby'
 
-Yo.api_key = "#{ENV[;YO_API_KEY']}"
+Yo.api_key = "#{ENV['YO_API_KEY']}"
 
 get '/yo/:username' do
     begin
